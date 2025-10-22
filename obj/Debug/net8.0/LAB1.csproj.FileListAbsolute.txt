@@ -1,0 +1,15 @@
+D:\VS Code\MyCSharpProjects\TMPS LABS\bin\Debug\net8.0\GameCharacterSOLIDDemo.exe
+D:\VS Code\MyCSharpProjects\TMPS LABS\bin\Debug\net8.0\GameCharacterSOLIDDemo.deps.json
+D:\VS Code\MyCSharpProjects\TMPS LABS\bin\Debug\net8.0\GameCharacterSOLIDDemo.runtimeconfig.json
+D:\VS Code\MyCSharpProjects\TMPS LABS\bin\Debug\net8.0\GameCharacterSOLIDDemo.dll
+D:\VS Code\MyCSharpProjects\TMPS LABS\bin\Debug\net8.0\GameCharacterSOLIDDemo.pdb
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\LAB1.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\LAB1.AssemblyInfoInputs.cache
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\LAB1.AssemblyInfo.cs
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\LAB1.csproj.CoreCompileInputs.cache
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\LAB1.sourcelink.json
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\GameCharacterSOLIDDemo.dll
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\refint\GameCharacterSOLIDDemo.dll
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\GameCharacterSOLIDDemo.pdb
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\LAB1.genruntimeconfig.cache
+D:\VS Code\MyCSharpProjects\TMPS LABS\obj\Debug\net8.0\ref\GameCharacterSOLIDDemo.dll
