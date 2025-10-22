@@ -1,0 +1,84 @@
+Standard .NET/C# Git Ignore File
+
+Based on the official Visual Studio and .NET templates
+
+###################################
+
+Binaries and Object Files
+
+###################################
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.suo
+*.user
+*.bak
+*.ncb
+*.sbr
+*.res
+*.cache
+*.dll
+*.exe
+
+Intermediate files
+
+[Tt]emp/
+[Rr]eady/
+
+###################################
+
+Visual Studio / IDE Files
+
+###################################
+.vs/         # Local solution settings and cache
+*.vsproj.user
+*.vcxproj.filters
+*.sln.docstates
+.vsp
+[Ss]ource/[Cc]ontrol/
+[Bb]uild/[Ll]og/
+
+###################################
+
+Package Management
+
+###################################
+
+NuGet packages
+
+packages/
+
+The project.lock.json and similar files are often handled by implicit usings
+
+in modern .NET, but it's good practice to ensure package caches are ignored.
+
+project.lock.json
+
+NuGet cache files
+
+*.nupkg
+*.snupkg
+
+###################################
+
+Temporary Files
+
+###################################
+
+Logs
+
+*.log
+
+Windows temporary files
+
+*.tmp
+
+Mac OS files
+
+.DS_Store
+
+Linux temporary files
+
+*~
