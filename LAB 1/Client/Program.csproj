@@ -7,4 +7,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\Domain\Modules\Player.cs" />
+    <Compile Include="..\Domain\Modules\Role_Restrictions.cs" />
+    <Compile Include="..\Domain\Modules\Player_Pool.cs" />
+    <Compile Include="..\Domain\Modules\Role.cs" />
+    <Compile Include="..\Domain\Modules\Primary_Weapon.cs" />
+    <Compile Include="..\Domain\Modules\Secondary_Weapon.cs" />
+    <Compile Include="..\Domain\Modules\Gadget.cs" />
+    <Compile Include="..\Domain\Factory\Player_Builder.cs" />
+    <Compile Include="..\Domain\Factory\Sniper_Builder.cs" />
+    <Compile Include="..\Domain\Factory\Assault_Builder.cs" />
+  </ItemGroup>
+
 </Project>

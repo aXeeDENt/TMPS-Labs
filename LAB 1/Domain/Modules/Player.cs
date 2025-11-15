@@ -19,5 +19,10 @@ namespace LAB1
         {
             return new Player(this.role, this.primary_weapon, this.secondary_weapon, this.gadget);
         }
+
+        public void Show()
+        {
+            System.Console.WriteLine($"Role: {role}, Primary: {primary_weapon}, Secondary: {secondary_weapon}, Gadget: {gadget}");
+        }
     }
 }
