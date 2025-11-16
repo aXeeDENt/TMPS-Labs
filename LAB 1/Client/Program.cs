@@ -1,44 +1,40 @@
-using LAB1;
-
 namespace LAB1
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            // Prototype Pattern
+            Console.WriteLine("Prototype Pattern:");
             Player sniper = new Player(Role.Sniper, Primary_Weapon.HDR, Secondary_Weapon.FiveSeven, Gadget.Medkit);
-            Player sniperClone = sniper.Prototype();
-
+            Player sniper_Clone = sniper.Prototype();
             Player assault = new Player(Role.Assault, Primary_Weapon.M4, Secondary_Weapon.Knife, Gadget.Grenade);
-            Player assaultClone = assault.Prototype();
-
+            Player assault_Clone = assault.Prototype();
             sniper.Show();
-            sniperClone.Show();
+            sniper_Clone.Show();
             assault.Show();
-            assaultClone.Show();
+            assault_Clone.Show();
+            Console.WriteLine(" ");
 
-            // Builder Pattern
+            Console.WriteLine("Builder Pattern:");
+            Director director = new Director();
             SniperBuilder sniperBuilder = new SniperBuilder();
-            sniperBuilder.SetPrimaryWeapon();
-            sniperBuilder.SetSecondaryWeapon();
-            Player builtSniper = sniperBuilder.GetPlayer();
+            director.SetBuilder(sniperBuilder);
+            //sniperBuilder.CreateNewPlayer();   
+            Player builtSniper = director.BuildPlayer();
             builtSniper.Show();
-
             AssaultBuilder assaultBuilder = new AssaultBuilder();
-            assaultBuilder.SetPrimaryWeapon();
-            assaultBuilder.SetSecondaryWeapon();
-            Player builtAssault = assaultBuilder.GetPlayer();
+            director.SetBuilder(assaultBuilder);
+            assaultBuilder.CreateNewPlayer(); 
+            Player builtAssault = director.BuildPlayer();
             builtAssault.Show();
+            Console.WriteLine(" ");
 
-            // Object Pool Pattern
+            Console.WriteLine("Object Pool Pattern:");
             Player_Pool pool = new Player_Pool();
             pool.Release(builtSniper);
             pool.Release(builtAssault);
-
             Player p1 = pool.Get();
             Player p2 = pool.Get();
-
             p1.Show();
             p2.Show();
         }

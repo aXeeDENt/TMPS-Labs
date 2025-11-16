@@ -1,4 +1,2 @@
 namespace LAB1
-{
-    public enum Gadget { Grenade, Medkit, Armor }
-}
+{ public enum Gadget { Grenade, Medkit, Armor } }
