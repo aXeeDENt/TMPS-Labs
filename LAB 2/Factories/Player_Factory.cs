@@ -1,18 +1,14 @@
 using System;
 using models;
 using utilities;
-
 namespace factories
 {
-    public static class PlayerFactory
+    public static class Player_Factory
     {
-        // Create default players using valid defaults from RoleRestrictions
-        public static Player CreatePlayer(Role r)
+        public static Player Create_Player(Role r)
         {
-            if (r == Role.Assault)
-                return new Player(r, RoleRestrictions.AssaultPrimary[0], RoleRestrictions.AssaultSecondary[0], Gadget.Grenade);
-            else
-                return new Player(r, RoleRestrictions.SniperPrimary[0], RoleRestrictions.SniperSecondary[0], Gadget.Medkit);
+            if (r == Role.Assault) return new Player(r, Role_Restrictions.Assault_Primary[0], Role_Restrictions.Assault_Secondary[0], Gadget.Grenade);
+            else return new Player(r, Role_Restrictions.Sniper_Primary[0], Role_Restrictions.Sniper_Secondary[0], Gadget.Medkit);
         }
     }
 }

@@ -2,7 +2,6 @@ using System;
 
 namespace models
 {
-    // Concrete Player implementing IPlayer
     public class Player : IPlayer
     {
         public Role role { get; set; }
