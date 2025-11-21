@@ -141,12 +141,40 @@ public class PlayerProxy
 
 ### Results
 The final console output demonstrates:
-```bash
-Players created without patterns
-Players wrapped in a Decorator receiving correct group numbers
-Facade applying full loadouts cleanly
-Proxy blocking invalid weapon assignments
+- Players created without patterns
+- Players wrapped in a Decorator receiving correct group numbers
+- Facade applying full loadouts cleanly
+- Proxy blocking invalid weapon assignments
 Each step is visible in the console, proving that all three patterns function correctly.
+```powershell
+After basic creation (no patterns applied)
+Role: Assault, Primary: AK47, Secondary: Knife, Gadget: Grenade
+Role: Sniper, Primary: HDR, Secondary: Glock, Gadget: Medkit
+Role: Assault, Primary: AK47, Secondary: Knife, Gadget: Grenade
+
+After applying Player_Group_Decorator (groups assigned)
+[Group 1] Role: Assault, Primary: AK47, Secondary: Knife, Gadget: Grenade
+Group: 1
+[Group 2] Role: Sniper, Primary: HDR, Secondary: Glock, Gadget: Medkit
+Group: 2
+[Group 3] Role: Assault, Primary: AK47, Secondary: Knife, Gadget: Grenade
+Group: 3
+
+Applying loadouts (Facade)
+[Group 1] Role: Assault, Primary: M4, Secondary: Knife, Gadget: Grenade
+[Group 2] Role: Sniper, Primary: HDR, Secondary: Glock, Gadget: Medkit
+[Group 3] Role: Assault, Primary: M4, Secondary: Knife, Gadget: Grenade
+
+Trying invalid assignments via Player_Proxy (should be blocked)
+[Proxy] Primary set to AK47 for role Assault
+[Proxy] INVALID primary HDR for role Assault — assignment blocked.
+[Proxy] INVALID secondary Knife for role Sniper — assignment blocked.
+[Proxy] Primary set to AX50 for role Sniper
+
+Final state after proxy validations
+[Group 1] Role: Assault, Primary: AK47, Secondary: Knife, Gadget: Grenade
+[Group 2] Role: Sniper, Primary: AX50, Secondary: Glock, Gadget: Medkit
+[Group 3] Role: Assault, Primary: M4, Secondary: Knife, Gadget: Grenade
 ```
 ### Conclusions
 The use of structural design patterns greatly improves the architecture of the shooter system:
